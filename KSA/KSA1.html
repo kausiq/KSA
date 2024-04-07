@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .left-column,
+    .right-column {
+      width: calc(50% - 20px);
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .left-column,
+      .right-column {
+        width: 100%;
+      }
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style-type: none;
+    }
+
+    footer ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner">
+    <img src="RRR.webp" alt="Banner Image">
+  </section>
+  <section class="content">
+    <div class="left-column">
+      <h2>Blogs</h2>
+    </div>
+    <div class="right-column">
+      <h2>About Me</h2>
+      <p>My name is Kausiq Mondol.My ID is 213002051</p>
+      <h2>Join Mailing List</h2>
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="https://www.facebook.com/antu.mondal.90/">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/kausiq-mondol-4373bb195/">Linkedin</a></li>
+      <li><a href="https://www.instagram.com/kausiqmondal/">Instagram</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
